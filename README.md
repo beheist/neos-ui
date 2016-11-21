@@ -45,33 +45,9 @@ If you've installed `nvm` make sure that the next node LTS version `6.3.0` is co
 If you need help setting up `nvm`, `npm` or if you got any other problems, join our [Slack](https://neos-project.slack.com/) channel and we are most happy to help you with it. :).__
 
 
-### Use Docker image
-
-__Alternatively__, instead of doing above setup steps manually, use Docker.
-The [million12/neos-react-ui](https://github.com/million12/docker-neos-react-ui)
-contains Neos CMS, correct version of NodeJS/nvm and `neos/neos-ui` package
-installed and built, working out of the box.
-
-Refer to [million12/neos-react-ui](https://github.com/million12/docker-neos-react-ui)
-documentation about how to use it.
-
-
 ## Contributing
 
 [Read developer documentation on our wiki](https://github.com/neos/neos-ui/wiki).
-
-#### Development commands
-| Command         | Description                    |
-| --------------- | ------------------------------ |
-| `npm run build` | Builds all assets via webpack. |
-| `npm run lint:scripts`  | Lints all `.js` files via ESLint. |
-| `npm run lint:css`  | Lints all `.css` files via StyleLint. |
-| `npm run lint`  | Runs the above stated watch commands sequentially. |
-| `npm run karma` | Executes a single run of all unit tests via karma. (This is pretty slow due to webpack's single-compilation speed, use the `watch:karma` task instead for development) |
-| `npm run watch:build`  | Watches all source files and rebuilds the compiled files on file changes. |
-| `npm run watch:karma`  | Watches all source files and unit test specs and runs karma after the compilation has been completed. |
-| `npm run watch`  | Runs the above stated watch commands sequentially. |
-| `npm test`  | Executes both `npm run lint` and `npm run karma` sequentially. |
 
 #### Code style
 Our code style is based upon `xo`, with one big difference - We use 4 spaces instead of tabs, to align our code style a bit with the PSR-2 standard for our PHP codebase. To lint the code, execute `npm run lint` in your shell.
